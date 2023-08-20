@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "whitewalkersmod:block/raw_valyrian_steel_block"
+  }
+}

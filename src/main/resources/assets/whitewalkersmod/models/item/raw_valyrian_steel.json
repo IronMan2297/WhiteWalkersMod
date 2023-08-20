@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "whitewalkersmod:item/raw_valyrian_steel"
+  }
+}
