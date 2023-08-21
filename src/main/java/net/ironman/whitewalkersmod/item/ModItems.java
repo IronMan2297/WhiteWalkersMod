@@ -1,6 +1,7 @@
 package net.ironman.whitewalkersmod.item;
 
 import net.ironman.whitewalkersmod.WhiteWalkersMod;
+import net.ironman.whitewalkersmod.item.custom.FireSwordItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -60,6 +61,12 @@ public class ModItems {
             () -> new AxeItem(Tiers.NETHERITE, 6.0F, -2.0F, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> NETHERITE_DOUBLE_AXE = ITEMS.register("netherite_double_axe",
             () -> new AxeItem(Tiers.NETHERITE, 7.0F, -2.5F, new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> LIGHTBRINGER = ITEMS.register("lightbringer",
+            () -> new FireSwordItem(ModToolTiers.VALYRIAN, 3, -2.4F, new Item.Properties()));
+
+    public static final RegistryObject<Item> DRAGONGLASS_DAGGER = ITEMS.register("dragonglass_dagger",
+            () -> new SwordItem(ModToolTiers.DRAGONGLASS, 2, 0.0F, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

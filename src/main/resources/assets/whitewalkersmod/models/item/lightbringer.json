@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "whitewalkersmod:item/lightbringer3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "whitewalkersmod:item/lightbringer2d"
+    },
+    "ground": {
+      "parent": "whitewalkersmod:item/lightbringer2d"
+    },
+    "fixed": {
+      "parent": "whitewalkersmod:item/lightbringer2d"
+    }
+  }
+}

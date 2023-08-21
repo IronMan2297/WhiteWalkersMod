@@ -27,6 +27,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.VALYRIAN_STEEL_HOE.get());
                         output.accept(ModItems.VALYRIAN_STEEL_BATTLE_AXE.get());
                         output.accept(ModItems.VALYRIAN_STEEL_DOUBLE_AXE.get());
+                        output.accept(ModItems.LIGHTBRINGER.get());
+                        output.accept(ModItems.DRAGONGLASS_DAGGER.get());
 
                         output.accept(ModBlocks.VALYRIAN_STEEL_BLOCK.get());
                         output.accept(ModBlocks.RAW_VALYRIAN_STEEL_BLOCK.get());
