@@ -1,6 +1,7 @@
 package net.ironman.whitewalkersmod;
 
 import com.mojang.logging.LogUtils;
+import net.ironman.whitewalkersmod.Effect.ModEffects;
 import net.ironman.whitewalkersmod.block.ModBlocks;
 import net.ironman.whitewalkersmod.item.ModCreativeModeTabs;
 import net.ironman.whitewalkersmod.item.ModItems;
@@ -31,6 +32,8 @@ public class WhiteWalkersMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModEffects.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

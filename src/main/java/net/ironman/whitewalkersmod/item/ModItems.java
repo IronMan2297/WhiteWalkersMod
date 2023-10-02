@@ -1,7 +1,9 @@
 package net.ironman.whitewalkersmod.item;
 
+import net.ironman.whitewalkersmod.Effect.ModEffects;
 import net.ironman.whitewalkersmod.WhiteWalkersMod;
 import net.ironman.whitewalkersmod.item.custom.FireSwordItem;
+import net.ironman.whitewalkersmod.item.custom.IceStaffItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -67,6 +69,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> DRAGONGLASS_DAGGER = ITEMS.register("dragonglass_dagger",
             () -> new SwordItem(ModToolTiers.DRAGONGLASS, 2, 0.0F, new Item.Properties()));
+
+    public static final RegistryObject<Item> ICE_STAFF = ITEMS.register("ice_staff",
+            () -> new IceStaffItem(new Item.Properties().defaultDurability(256)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
